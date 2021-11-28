@@ -118,15 +118,18 @@
       </h1>
       <section class="page-catalog__photo-catalog photo-catalog">
         <div class="photo-catalog__wrapper">
-          <h2 class="photo-catalog__title">
+          <h2 class="visually-hidden">
+            Блок фотографий
+          </h2>
+          <p class="photo-catalog__title">
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
-          </h2>
+          </p>
           <div class="photo-catalog__block block-of-the-day">
             <span class="block-of-the-day__mark">
               Панорама дня
             </span>
-            <img src="#"  width="320" height="137" alt="Панорама нависного моста">
+            <img class="block-of-the-day__image" src="#"  width="320" height="137" alt="Панорама нависного моста">
             <div class="block-of-the-day__comment">
               <p class="block-of-the-day__username">
                 Анна
@@ -153,175 +156,180 @@
               </label>
             </div>
           </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="Белый автомобиль">
-            <div class="block__comment">
-              <p class="block__username">
-                Левон
-              </p>
-              <span class="block__comment-time">
-                (5 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
-                  </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    356
-                  </span>
+          <ul class="photo-catalog__list">
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Белый автомобиль">
+              <div class="block__comment">
+                <p class="block__username">
+                  Левон
+                </p>
+                <span class="block__comment-time">
+                  (5 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="Барабанны">
-            <div class="block__comment">
-              <p class="block__username">
-                Антон
-              </p>
-              <span class="block__comment-time">
-                (12 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Соседи будут рады!
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
+                <p class="block__comment-text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                     356
+                    </span>
                   </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    666
-                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Барабанны">
+              <div class="block__comment">
+                <p class="block__username">
+                  Антон
+                </p>
+                <span class="block__comment-time">
+                  (12 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="Стеклянная крыша">
-            <div class="block__comment">
-              <p class="block__username">
-                Борис
-              </p>
-              <span class="block__comment-time">
-                (20 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
+                <p class="block__comment-text">
+                  Соседи будут рады!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      666
+                    </span>
                   </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    215
-                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Стеклянная крыша">
+              <div class="block__comment">
+                <p class="block__username">
+                  Борис
+                </p>
+                <span class="block__comment-time">
+                  (20 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="Рынок с бахчой">
-            <div class="block__comment">
-              <p class="block__username">
-                Сергей
-              </p>
-              <span class="block__comment-time">
-                (25 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Самая кубанская в мире!
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
+                <p class="block__comment-text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      215
+                    </span>
                   </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    4
-                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Рынок с бахчой">
+              <div class="block__comment">
+                <p class="block__username">
+                  Сергей
+                </p>
+                <span class="block__comment-time">
+                  (25 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="фото с высоты">
-            <div class="block__comment">
-              <p class="block__username">
-                Максим
-              </p>
-              <span class="block__comment-time">
-                (40 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Где снег-то?
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
+                <p class="block__comment-text">
+                  Самая кубанская в мире!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      4
+                    </span>
                   </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    150
-                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="фото с высоты">
+              <div class="block__comment">
+                <p class="block__username">
+                  Максим
+                </p>
+                <span class="block__comment-time">
+                  (40 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
-          <div class="photo-catalog__block block">
-            <img src="#"  width="280" height="180" alt="Крыло самолета из иллюминатора">
-            <div class="block__comment">
-              <p class="block__username">
-                Надежда
-              </p>
-              <span class="block__comment-time">
-                (45 часов назад)
-              </span>
-              <p class="block__comment-text">
-                Всем GM и взаимные лайки!
-              </p>
-              <label class="block__label">
-                <button class="block__like-button">
-                  <span class="visually-hidden">
-                    Лайк
+                <p class="block__comment-text">
+                  Где снег-то?
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      150
+                    </span>
                   </span>
-                </button>
-                <span class="block__like-button-description dedicated-text">
-                  Нравится:
-                  <span class="block__counter">
-                    2560
-                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Крыло самолета из иллюминатора">
+              <div class="block__comment">
+                <p class="block__username">
+                  Надежда
+                </p>
+                <span class="block__comment-time">
+                  (45 часов назад)
                 </span>
-              </label>
-            </div>
-          </div>
+                <p class="block__comment-text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      2560
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="page-catalog__upload upload">
+        <h2 class="visually-hidden">
+          Выложи своё фото!
+        </h2>
         <div class="upload__wrapper">
-          <h2 class="upload__title">
+          <p class="upload__title">
             Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-          </h2>
+          </p>
           <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
             <img class="upload__user-photo" src="#" width="280" height="374" alt="Ваше фото">
             <div class="upload__settings settings">
@@ -336,11 +344,11 @@
               </button>
               <span class="settings__tuning-strip"></span>
             </div>
-            <div class="settings__button-post">
-              <button class="settings__button-apply rounded-button" type="button">
+            <div class="upload__button-post">
+              <button class="upload__button-apply rounded-button" type="button">
                 Запостить
               </button>
-              <button class="settings__button-cancellation rounded-button" type="button">
+              <button class="upload__button-cancellation rounded-button" type="button">
                 Отмена
               </button>
             </div>
