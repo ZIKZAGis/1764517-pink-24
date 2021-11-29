@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Пинк</title>
+    <title>Конкурс</title>
     <link rel="icon" href="../favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_32.png">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="visually-hidden">
           <svg class="logo__glasses" focusable="false" width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="очки">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491
@@ -89,12 +89,12 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link" href="#">
                 Фотографии
               </a>
             </li>
@@ -112,250 +112,247 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">
-        Приложение "Пинк" - взгляни на жизнь иначе
+    <main class="page-catalog">
+      <h1 class="page-catalog__title">
+        Фотографии пользователей
       </h1>
-      <section class="intro">
-        <div class="intro__wrapper">
-          <h2 class="intro__title">
-            Взгляните на жизнь иначе!
+      <section class="page-catalog__photo-catalog photo-catalog">
+        <div class="photo-catalog__wrapper">
+          <h2 class="visually-hidden">
+            Блок фотографий
           </h2>
-          <button class="intro__button" type="button">
-            Скачать приложение
-          </button>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <span class="visually-hidden">
-                android
+          <p class="photo-catalog__title">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+          <div class="photo-catalog__block block-of-the-day">
+            <span class="block-of-the-day__mark">
+              Панорама дня
+            </span>
+            <img class="block-of-the-day__image" src="#"  width="320" height="137" alt="Панорама нависного моста">
+            <div class="block-of-the-day__comment">
+              <p class="block-of-the-day__username">
+                Анна
+              </p>
+              <span class="block-of-the-day__comment-time">
+                (5 минут назад)
               </span>
-            </li>
-            <li class="intro__item">
-              <span class="visually-hidden">
-                ios
-              </span>
-            </li>
-            <li class="intro__item">
-              <span class="visually-hidden">
-                windows phone
-              </span>
-            </li>
-          </ul>
-          <p class="intro__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </section>
-      <section class="info">
-        <h2 class="visually-hidden">
-          Возможности приложения
-        </h2>
-        <div class="info__wrapper">
-          <p class="info__question">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="info__answer">
-            Нам есть, что вам предложить!
-          </p>
-          <dl class="info__list">
-            <div class="info__item">
-              <dt class="info__title">
-                Поднимает настроение
-              </dt>
-              <dd class="info__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </dd>
+              <p class="block-of-the-day__comment-text">
+                Прыгать или нет? Напишите в комментарии свой совет и
+                смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <label class="block-of-the-day__label">
+                <button class="block-of-the-day__like-button">
+                  <span class="visually-hidden">
+                    Лайк
+                  </span>
+                </button>
+                <span class="block-of-the-day__like-button-description dedicated-text">
+                  Нравится:
+                  <span class="block-of-the-day__counter">
+                    215
+                  </span>
+                </span>
+              </label>
             </div>
-            <div class="info__item">
-              <dt class="info__title">
-                Меняет мир вокруг
-              </dt>
-              <dd class="info__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </dd>
+          </div>
+          <ul class="photo-catalog__list">
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Белый автомобиль">
+              <div class="block__comment">
+                <p class="block__username">
+                  Левон
+                </p>
+                <span class="block__comment-time">
+                  (5 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      356
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Барабанны">
+              <div class="block__comment">
+                <p class="block__username">
+                  Антон
+                </p>
+                <span class="block__comment-time">
+                  (12 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Соседи будут рады!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      666
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Стеклянная крыша">
+              <div class="block__comment">
+                <p class="block__username">
+                  Борис
+                </p>
+                <span class="block__comment-time">
+                  (20 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      215
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Рынок с бахчой">
+              <div class="block__comment">
+                <p class="block__username">
+                  Сергей
+                </p>
+                <span class="block__comment-time">
+                  (25 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Самая кубанская в мире!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      4
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="фото с высоты">
+              <div class="block__comment">
+                <p class="block__username">
+                  Максим
+                </p>
+                <span class="block__comment-time">
+                  (40 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Где снег-то?
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      150
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li class="photo-catalog__item block">
+              <img class="block__image" src="#"  width="280" height="180" alt="Крыло самолета из иллюминатора">
+              <div class="block__comment">
+                <p class="block__username">
+                  Надежда
+                </p>
+                <span class="block__comment-time">
+                  (45 часов назад)
+                </span>
+                <p class="block__comment-text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <label class="block__label">
+                  <button class="block__like-button">
+                    <span class="visually-hidden">
+                      Лайк
+                    </span>
+                  </button>
+                  <span class="block__like-button-description dedicated-text">
+                    Нравится:
+                    <span class="block__counter">
+                      2560
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-catalog__upload upload">
+        <h2 class="visually-hidden">
+          Выложи своё фото!
+        </h2>
+        <div class="upload__wrapper">
+          <p class="upload__title">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+            <img class="upload__user-photo" src="#" width="280" height="374" alt="Ваше фото">
+            <div class="upload__settings settings">
+              <button class="settings__button settings__button--crop">
+                <span class="visually-hidden">Обрезать</span>
+              </button>
+              <button class="settings__button settings__button--fill">
+                <span class="visually-hidden">Заливка</span>
+              </button>
+              <button class="settings__button settings__button--contrast">
+                <span class="visually-hidden">Контраст</span>
+              </button>
+              <span class="settings__tuning-strip"></span>
             </div>
-            <div class="info__item">
-              <dt class="info__title">
-                Заводит новых друзей
-              </dt>
-              <dd class="info__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </dd>
+            <div class="upload__button-post">
+              <button class="upload__button-apply rounded-button" type="button">
+                Запостить
+              </button>
+              <button class="upload__button-cancellation rounded-button" type="button">
+                Отмена
+              </button>
             </div>
-          </dl>
-        </div>
-      </section>
-      <section class="diagram">
-        <h2 class="visually-hidden">
-          Диаграмма эффективности
-        </h2>
-        <div class="diagram__wrapper">
-          <h3 class="diagram__title">
-            Эффект на 24 часа!
-          </h3>
-          <p class="diagram__description">
-            Британские ученые провели исследования и доказали,
-            что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#" class="diagram__link">Узнать больше об исследовании</a>
-        </div>
-      </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">
-          Отзывы пользователей
-        </h2>
-        <div class="reviews__wrapper slider">
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <p class="reviews__username">
-                Николай Петров
-              </p>
-              <p class="reviews__user-info">
-                25 лет, водитель трамвая
-              </p>
-              <blockquote class="reviews__user-feedback">
-                «Это приложение перевернуло мой мир и позволило
-                по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой
-                в комментариях к выложенной фотографии!»
-              </blockquote>
-            </li>
-            <li class="reviews__item slider__item">
-              <p class="reviews__username">
-                Николай Петров
-              </p>
-              <p class="reviews__user-info">
-                25 лет, водитель трамвая
-              </p>
-              <blockquote class="reviews__user-feedback">
-                «Это приложение перевернуло мой мир и позволило
-                по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой
-                в комментариях к выложенной фотографии!»
-              </blockquote>
-            </li>
-            <li class="reviews__item slider__item">
-              <p class="reviews__username">
-                Николай Петров
-              </p>
-              <p class="reviews__user-info">
-                25 лет, водитель трамвая
-              </p>
-              <blockquote class="reviews__user-feedback">
-                «Это приложение перевернуло мой мир и позволило
-                по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой
-                в комментариях к выложенной фотографии!»
-              </blockquote>
-            </li>
-          </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="price">
-        <h2 class="visually-hidden">
-          Прайс
-        </h2>
-        <div class="price__wrapper slider">
-          <ul class="price__list slider__list">
-            <li class="price__item slider__item">
-              <div class="price__header">
-                <h3 class="price__title">База</h3>
-                <p class="price__value">1,99 USD</p>
-              </div>
-              <div class="price__options">
-                <p class="price__option">
-                  Розовый фильтр
-                </p>
-                <p class="price__option">
-                  Смайлики
-                </p>
-                <p class="price__option">
-                  Комментарии
-                </p>
-              </div>
-            </li>
-            <li class="price__item slider__item">
-              <div class="price__header">
-                <h3 class="price__title">Стандарт</h3>
-                <p class="price__value">3,99 USD</p>
-              </div>
-              <div class="price__options">
-                <p class="price__option">
-                  Розовый фильтр
-                </p>
-                <p class="price__option">
-                  Смайлики
-                </p>
-                <p class="price__option">
-                  Комментарии
-                </p>
-              </div>
-            </li>
-            <li class="price__item slider__item">
-              <div class="price__header">
-                <h3 class="price__title">Анлим</h3>
-                <p class="price__value">9,99 USD</p>
-              </div>
-              <div class="price__options">
-                <p class="price__option">
-                  Розовый фильтр
-                </p>
-                <p class="price__option">
-                  Смайлики
-                </p>
-                <p class="price__option">
-                  Комментарии
-                </p>
-              </div>
-            </li>
-          </ul>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">
-          Наши контакты
-        </h2>
-        <div class="contacts__wrapper">
-          <h3 class="contacts__title">
-            Остались вопросы? Свяжитесь с нами!
-          </h3>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p>
-                Звоните
-              </p>
-              <a href="tel:88128121212">
-                +7 (812) 555-66-66
-              </a>
-            </li>
-            <li class="contacts__item">
-              <p>
-                Пишите:
-              </p>
-              <a href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </li>
-            <li class="contacts__item">
-              <p>
-                Приезжайте в гости:
-              </p>
-              <address>
-                ул. Большая Конюшенная, 19/8
-              </address>
-            </li>
-          </ul>
-          <div class="contacts__map"></div>
+          </form>
         </div>
       </section>
     </main>
