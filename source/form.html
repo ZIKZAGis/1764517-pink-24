@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Конкурс</title>
     <link rel="icon" href="../favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_32.png">
@@ -229,40 +230,49 @@
             </ul>
           </fieldset>
           <fieldset class="application__version version">
-            <legend class="version__title dedicated-text">
-              С каким приложением путешествовали?
-            </legend>
-            <ul class="version__list">
-              <li class="version__item">
-                <label class="version__control">
-                  <input class="version__control-input visually-hidden" type="radio" name="IOS" checked>
-                  <span class="version__control-mark"></span>
-                  <span class="version__control-label">Pink для iOS</span>
-                </label>
-              </li>
-              <li class="version__item">
-                <label class="version__control">
-                  <input class="version__control-input visually-hidden" type="radio" name="Android">
-                  <span class="version__control-mark"></span>
-                  <span class="version__control-label">Pink на Android</span>
-                </label>
-              </li>
-              <li class="version__item">
-                <label class="version__control">
-                  <input class="version__control-input visually-hidden" type="radio" name="Windows Phone">
-                  <span class="version__control-mark"></span>
-                  <span class="version__control-label">Windows Phone</span>
-                </label>
-              </li>
-            </ul>
+            <div class="version__wrapper">
+              <legend class="version__title dedicated-text">
+                С каким приложением путешествовали?
+              </legend>
+              <ul class="version__list">
+                <li class="version__item">
+                  <label class="version__control">
+                    <input class="version__control-input visually-hidden" type="radio" name="IOS" checked>
+                    <span class="version__control-mark"></span>
+                    <span class="version__control-label">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="version__item">
+                  <label class="version__control">
+                    <input class="version__control-input visually-hidden" type="radio" name="Android">
+                    <span class="version__control-mark"></span>
+                    <span class="version__control-label">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="version__item">
+                  <label class="version__control">
+                    <input class="version__control-input visually-hidden" type="radio" name="Windows Phone">
+                    <span class="version__control-mark"></span>
+                    <span class="version__control-label">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="application__feedback feedback">
-            <legend class="feedback__title dedicated-text">
-              Опишите свои эмоции
-            </legend>
-            <textarea class="feedback__textarea" name="feedback" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <div class="feedback__wrapper">
+              <legend class="feedback__title dedicated-text">
+                Опишите свои эмоции
+              </legend>
+              <textarea class="feedback__textarea" name="feedback" cols="30" rows="auto">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
           </fieldset>
-          <button class="application__button-send button" type="submit">Отправить форму</button>
+          <div class="application__button-wrapper">
+            <button class="application__button-send button" type="submit">
+              Отправить форму
+            </button>
+          </div>
+
           <p class="application__required-field">
             <span class="dedicated-text">
               *
