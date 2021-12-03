@@ -11,18 +11,30 @@
   padding: 127px 0 49px 0;
 }
 
-.price__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.price__table {
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
-.price__header {
+.price__table-head {
   background-color: #283645;
   color: #ffffff;
   border-left: 2px solid #f2f2f2;
+  text-align: center;
+}
+
+.price__table-head:last-child {
   border-right: 2px solid #f2f2f2;
-  padding: 10px;
+}
+
+.price__table-head--empty {
+  display: none;
+}
+
+.price__option--hiding-s {
+  display: none;
 }
 
 .price__title {
