@@ -1,3 +1,31 @@
 .diagram {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding: 100px 20px 85px;
+  }
+}
+
+.diagram__wrapper {
+  max-width: 50%;
+  margin-left: auto;
+}
+
+.diagram__title {
+  max-width: 170px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: @black;
+  margin: 0 0 20px 0;
+}
+
+.diagram__description {
+  line-height: 24px;
+  margin: 0 0 20px 0;
+}
+
+.diagram__link {
+  color: @darkpink;
 }
