@@ -12,7 +12,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <a class="page-header__logo" href="#">
+          <a class="page-header__logo" href="index.html">
             <svg class="page-header__logo-glasses" focusable="false" width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="очки">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491
                 59.0184 28.1815 58.98 28.4078C58.9417 28.6341 58.849 28.8472 58.7102 29.0284C58.5715 29.2096
@@ -126,10 +126,10 @@
         <h2 class="visually-hidden">
           Участвуй в конкурсе!
         </h2>
-        <p class="application__title">
+        <h3 class="application__title">
           Поделитесь своей историей и получите шанс выиграть ценный
           приз — 1000 миль на вашу бонусную карту!
-        </p>
+        </h3>
         <form class="application__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="application__full-username full-username">
             <ul class="full-username__list">
@@ -161,7 +161,7 @@
           </fieldset>
           <fieldset class="application__achievements achievements">
             <div class="achievements__wrapper">
-              <legend class="achievements__title dedicated-text">
+              <legend class="achievements__legend dedicated-text">
                 Ваши безбашенные достижения в путешествии
               </legend>
               <ul class="achievements__list">
@@ -211,7 +211,7 @@
             </div>
           </fieldset>
           <fieldset class="application__user-contacts user-contacts">
-            <legend class="user-contacts__title">
+            <legend class="user-contacts__legend dedicated-text">
               Контактная информация
             </legend>
             <ul class="user-contacts__list">
@@ -231,7 +231,7 @@
           </fieldset>
           <fieldset class="application__version version">
             <div class="version__wrapper">
-              <legend class="version__title dedicated-text">
+              <legend class="version__legend dedicated-text">
                 С каким приложением путешествовали?
               </legend>
               <ul class="version__list">
@@ -261,10 +261,10 @@
           </fieldset>
           <fieldset class="application__feedback feedback">
             <div class="feedback__wrapper">
-              <legend class="feedback__title dedicated-text">
+              <legend class="feedback__legend dedicated-text">
                 Опишите свои эмоции
               </legend>
-              <textarea class="feedback__textarea" name="feedback" cols="30" rows="auto">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="feedback__textarea" name="feedback" cols="30" rows="auto" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <div class="application__button-wrapper">
@@ -282,18 +282,18 @@
         </form>
       </section>
       <div class="failure">
-        <p class="failure__title">
+        <h3 class="failure__title">
           Что-то пошло не так!
-        </p>
+        </h3>
         <p class="failure__description">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <button class="failure__button button" type="button">Ок</button>
       </div>
       <div class="success">
-        <p class="success__title">
+        <h3 class="success__title">
           Ваша заявка отправлена
-        </p>
+        </h3>
         <p class="success__description">
           Спасибо за ваше участие, ваша заявка уже поступила к нам.
           В ближайшее время мы рассмотрим ее и оповестим вас.
@@ -373,25 +373,43 @@
               21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z" fill="white"/>
           </svg>
         </a>
-        <ul class="page-footer__list page-footer__social">
-          <li class="page-footer__item page-footer__social--twitter">
-            <span class="visually-hidden">твиттер</span>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link-twitter" href="#">
+              <span class="visually-hidden">
+                твиттер
+              </span>
+            </a>
           </li>
-          <li class="page-footer__item page-footer__social--facebook">
-            <span class="visually-hidden">фейсбук</span>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link-facebook" href="#">
+              <span class="visually-hidden">
+                фейсбук
+              </span>
+            </a>
           </li>
-          <li class="page-footer__item page-footer__social--youtube">
-            <span class="visually-hidden">ютуб</span>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link-youtube" href="#">
+              <span class="visually-hidden">
+                ютуб
+              </span>
+            </a>
           </li>
         </ul>
-        <p class="page-footer__developed">
-          Разработано
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">
-              HTML академия
-            </span>
+        <div class="page-footer__developed">
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано
+            <svg class="page-footer__logo-html-academy" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="html академия">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5
+                31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088
+                25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344
+                13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536
+                17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029
+                19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561
+                12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+            </svg>
           </a>
-        </p>
+        </div>
       </div>
     </footer>
   </body>
