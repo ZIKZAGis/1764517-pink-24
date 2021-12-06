@@ -3,26 +3,34 @@
   outline-offset: -2px;
 }
 
-.page-header__top {
+.page-header__wrapper {
+  color: @white;
+  background-color: #1d2631;
+  background-image: url("../../img/index/background/background-intro-s.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index/background/background-intro-m.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/index/background/background-intro-l.jpg");
+    background-size: cover;
+  }
+}
+
+.page-header__navigation {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0 20px;
-}
 
-.page-header__wrapper {
-  background-image: url("../../img/index/background/background-intro.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
-.page-header__wrapper-index {
-  background-image:
-    url("../../img/index/background/background-intro-phone.png"),
-    url("../../img/index/background/background-intro.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom, top;
-  background-size: auto, cover;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 43px 130px 43px;
+  }
 }
 
 .page-header__logo-glasses {
@@ -34,6 +42,23 @@
   text-align: center;
 }
 
+.page-header__intro-index {
+  background-image: url("../../img/index/background/background-intro-phone-s.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 230px;
+    background-image: none;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
+}
+
 .page-header__intro-title {
   font-weight: 300;
   font-size: 24px;
@@ -41,15 +66,25 @@
   color: @white;
   margin: 0;
 
-  &--index {
-    padding: 29px 20px 320px;
-  }
-
   &--form {
     padding: 36px 20px 51px;
   }
 
   &--catalog {
     padding: 36px 20px 84px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.page-header__intro-title--index {
+  padding: 29px 20px 320px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    padding-bottom: 0;
   }
 }
