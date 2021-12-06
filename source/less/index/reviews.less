@@ -1,6 +1,4 @@
 .reviews {
-  outline: 2px solid #d22856;
-  outline-offset: -2px;
   padding: 50px 0 10px 0;
 
   @media (min-width: @tablet-width) {
@@ -64,5 +62,12 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 0 40px 30px;
   }
 }
