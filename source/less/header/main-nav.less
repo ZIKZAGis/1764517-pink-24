@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav__link {
@@ -11,4 +15,10 @@
   line-height: 32px;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
