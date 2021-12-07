@@ -9,6 +9,15 @@
 
 .block-of-the-day__image {
   width: 100%;
+  min-height: 137px;
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .block-of-the-day__comment-wrapper {
@@ -20,6 +29,13 @@
   background-color: @lightgrey;
   padding: 25px 17px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    max-width: 940px;
+    padding: 30px;
+    margin: 0 auto 50px;
+  }
 }
 
 .block-of-the-day__username {
