@@ -129,6 +129,9 @@
         <h3 class="application__title">
           Поделитесь своей историей и получите шанс выиграть ценный
           приз — 1000 миль на вашу бонусную карту!
+          <span class="aplication__title--hidding-s">
+            Пожалуйста, заполните форму ниже:
+          </span>
         </h3>
         <form class="application__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="application__full-username full-username">
@@ -267,18 +270,19 @@
               <textarea class="feedback__textarea" name="feedback" cols="30" rows="auto" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
-          <div class="application__button-wrapper">
-            <button class="application__button-send button" type="submit">
-              Отправить форму
-            </button>
+          <div class="application__bottom-wrapper">
+            <div class="application__button-wrapper">
+              <button class="application__button-send button" type="submit">
+                Отправить форму
+              </button>
+            </div>
+            <p class="application__required-field">
+              <span class="dedicated-text">
+                *
+              </span>
+              — обязательные поля
+            </p>
           </div>
-
-          <p class="application__required-field">
-            <span class="dedicated-text">
-              *
-            </span>
-            — обязательные поля
-          </p>
         </form>
       </section>
       <div class="failure">
