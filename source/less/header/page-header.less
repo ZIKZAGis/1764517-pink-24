@@ -1,4 +1,5 @@
 .page-header__wrapper {
+  position: relative;
   color: @white;
   background-color: #1d2631;
   background-image: url("../../img/index/background/background-intro-s.jpg");
@@ -51,6 +52,16 @@
 
   @media (min-width: @desktop-width) {
     padding: 27px 130px 40px;
+  }
+}
+
+.page-header__navigation--active {
+  background-color: #283645;
+  border-bottom: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
   }
 }
 
