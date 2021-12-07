@@ -1,12 +1,25 @@
 .version {
   border: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    border: 2px solid @grey;
+    border-radius: 3px;
+  }
 }
 
 .version__wrapper {
   background-color: @lightgrey;
   padding: 42px 20px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+    background-color: transparent;
+    padding: 54px 60px;
+    margin: 0 auto;
+  }
 }
 
 .version__legend {

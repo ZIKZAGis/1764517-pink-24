@@ -1,11 +1,22 @@
 .achievements {
   border: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @grey;
+    border-radius: 3px;
+    order: 3;
+  }
 }
 
 .achievements__wrapper {
   background-color: @lightgrey;
   padding: 42px 22px 44px 22px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    padding: 54px 60px 50px;
+  }
 }
 
 .achievements__legend {

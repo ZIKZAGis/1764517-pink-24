@@ -1,10 +1,21 @@
 .feedback {
   border: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    border: 2px solid @grey;
+    border-radius: 3px;
+    margin-bottom: 70px;
+  }
 }
 
 .feedback__wrapper {
   padding: 42px 22px 52px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 47px 53px;
+  }
 }
 
 .feedback__legend {

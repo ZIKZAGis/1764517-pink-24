@@ -1,9 +1,20 @@
 .user-contacts {
   padding: 42px 0 44px 0;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    border-color: @grey;
+    border-radius: 3px;
+    padding: 46px 60px 37px;
+  }
 }
 
 .user-contacts__legend {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
 
 .user-contacts__list {
@@ -12,8 +23,27 @@
   padding: 0;
 }
 
+.user-contacts__item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.user-contacts__control {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .user-contacts__label {
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    display: inline-flex;
+    order: 1;
+    margin: 0 20px 0;
+  }
 }
 
 .user-contacts__input {
@@ -24,4 +54,8 @@
   color: @navyblue;
   padding: 23px 20px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
 }
