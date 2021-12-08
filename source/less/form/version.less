@@ -7,6 +7,11 @@
     border: 2px solid @grey;
     border-radius: 3px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .version__wrapper {
@@ -19,6 +24,10 @@
     background-color: transparent;
     padding: 54px 60px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 74px 0;
   }
 }
 
