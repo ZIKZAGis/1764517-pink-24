@@ -23,6 +23,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    position: relative;
     max-width: 700px;
     background-color: transparent;
     box-shadow: none;
@@ -36,6 +37,21 @@
     padding: 0;
     text-align: center;
     background-color: #283645;
+  }
+}
+
+.main-nav__item--current {
+  position: relative;
+}
+
+.main-nav__item--current::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 2px solid @white;
   }
 }
 
@@ -55,18 +71,18 @@
     color: @darkpink;
   }
 
-  @media (max-width: @desktop-width) {
-    &:active {
-      color: fade(@darkpink, 30%);
-    }
-  }
-
   @media (min-width: @desktop-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
     border: none;
+  }
+}
+
+.main-nav__link:active {
+  @media (min-width: @desktop-width) {
+    color: fade(@darkpink, 30%);
   }
 }
 
