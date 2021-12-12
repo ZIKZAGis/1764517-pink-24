@@ -1,6 +1,4 @@
-.page-header__wrapper {
-  position: relative;
-  color: @white;
+.page-header {
   background-color: #1d2631;
   background-image: url("../../img/header/background/background-intro-s.jpg");
   background-repeat: no-repeat;
@@ -17,23 +15,39 @@
   }
 }
 
-.page-header__wrapper-m {
+.page-header-main {
   @media (min-width: @tablet-width) {
-    background-image:
-      url("../../img/index/background/background-intro-phone-m.png"),
-      url("../../img/header/background/background-intro-m.jpg");
+    background-image: url("../../img/header/background/background-intro-m.jpg");
     background-repeat: no-repeat;
-    background-position: bottom right, top;
-    background-size: auto, cover;
+    background-position: top;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
-    background-image:
-      url("../../img/index/background/background-intro-phone-l.png"),
-      url("../../img/header/background/background-intro-l.jpg");
+    background-image: url("../../img/header/background/background-intro-l.jpg");
     background-repeat: no-repeat;
-    background-position: bottom right, top;
-    background-size: auto, cover;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 1200px;
+  position: relative;
+  color: @white;
+  margin: 0 auto;
+}
+
+.page-header__wrapper-main {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index/background/background-intro-phone-m.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/index/background/background-intro-phone-l.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
   }
 }
 
@@ -120,16 +134,20 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 230px;
+    max-width: 300px;
+    box-sizing: border-box;
     background-image: none;
     text-align: left;
-    padding: 0 40px 50px;
+    margin-left: 20px;
+    padding: 0 40px 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 170px 50px;
+    margin-left: 130px;
+    padding: 0 20px 30px;
   }
 }
 
@@ -141,11 +159,11 @@
   margin: 0;
 
   &--index {
-    padding: 29px 20px 320px;
+    padding: 25px 20px 310px;
 
     @media (min-width: @tablet-width) {
       text-align: center;
-      padding-bottom: 0;
+      padding: 0;
     }
   }
 
@@ -168,5 +186,10 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
