@@ -1,12 +1,13 @@
 .price__wrapper {
   text-align: center;
-  background-image: url("../../img/index/background/background-price.png");
+  background-image: url("../../img/index/background/background-price-index-s.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 127px 20px 49px;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../../img/index/background/background-price-index-m.png");
     padding-bottom: 70px;
   }
 
@@ -19,7 +20,27 @@
   width: 100%;
   border-collapse: collapse;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
+}
+
+.price__table-current {
+  @media (max-width: @mobile-width-only) {
+    &--base {
+      transform: translateX(0);
+    }
+
+    &--standard {
+      transform: translateX(-280px);
+    }
+
+    &--unlimited {
+      transform: translateX(-560px);
+    }
+  }
 }
 
 .price__table-head {
@@ -48,6 +69,37 @@
   }
 }
 
+.price__option {
+  font-size: 14px;
+  line-height: 30px;
+  background-color: @white;
+  background-repeat: no-repeat;
+  background-position: 230px 21px;
+  border: 2px solid @grey;
+  border-top: none;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+
+  &--yes {
+    background-image: url("../../img/index/icon/price-yes.svg");
+  }
+
+  &--no {
+    background-image: url("../../img/index/icon/price-no.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+    height: 59px;
+    box-sizing: border-box;
+    background-position: center;
+    text-transform: none;
+    padding: 8px 15px;
+  }
+}
+
 .price__option--hiding-s {
   display: none;
 
@@ -55,6 +107,11 @@
     display: table-cell;
     box-sizing: border-box;
     min-width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -76,6 +133,10 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__value {
@@ -84,21 +145,8 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0 0 17px 0;
-}
 
-.price__option {
-  font-size: 14px;
-  line-height: 30px;
-  background-color: @white;
-  border: 2px solid @grey;
-  border-top: none;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 20px;
-
-  @media (min-width: @tablet-width) {
-    display: table-cell;
-    text-transform: none;
-    padding: 8px 15px;
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
   }
 }
