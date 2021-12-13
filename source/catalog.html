@@ -338,29 +338,56 @@
           <p class="upload__title">
             Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
           </p>
-          <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
-            <img class="upload__user-photo" src="#" width="280" height="374" alt="Ваше фото">
-            <div class="upload__settings settings">
-              <button class="settings__button settings__button--crop">
-                <span class="visually-hidden">Обрезать</span>
-              </button>
-              <button class="settings__button settings__button--fill">
-                <span class="visually-hidden">Заливка</span>
-              </button>
-              <button class="settings__button settings__button--contrast">
-                <span class="visually-hidden">Контраст</span>
-              </button>
-              <span class="settings__tuning-strip"></span>
-            </div>
-            <div class="upload__button-post">
-              <button class="upload__button-apply" type="button">
-                Запостить
-              </button>
-              <button class="upload__button-cancellation" type="button">
-                Отмена
-              </button>
-            </div>
-          </form>
+          <div class="upload__form-wrapper">
+            <form class="upload__form upload__form-s" action="https://echo.htmlacademy.ru" method="post">
+              <img class="upload__user-photo" src="img/catalog/users-photos/user-photo.jpg" width="280" height="374" alt="Ваше фото">
+              <div class="upload__settings settings">
+                <label class="settings__button-label">
+                  <span class="settings__button-mark settings__button-mark-crop"></span>
+                  <input class="visually-hidden" type="radio" name="crop">
+                </label>
+                <label class="settings__button-label">
+                  <span class="settings__button-mark settings__button-mark-fill"></span>
+                  <input class="visually-hidden" type="radio" name="fill">
+                </label>
+                <label class="settings__button-label">
+                  <span class="settings__button-mark settings__button-mark-contrast"></span>
+                  <input class="visually-hidden" type="radio" name="contrast">
+                </label>
+                <span class="settings__tuning-strip">
+                  <span class="settings__tuning-mark"></span>
+                </span>
+              </div>
+              <div class="upload__settings settings-m">
+                <div class="settings-m__parameter">
+                  <span class="settings-m__mark settings-m__mark-crop"></span>
+                  <span class="settings-m__tuning-strip">
+                    <span class="settings-m__tuning-mark settings-m__tuning-mark-crop"></span>
+                  </span>
+                </div>
+                <div class="settings-m__parameter">
+                  <span class="settings-m__mark settings-m__mark-fill"></span>
+                  <span class="settings-m__tuning-strip">
+                    <span class="settings-m__tuning-mark settings-m__tuning-mark-fill"></span>
+                  </span>
+                </div>
+                <div class="settings-m__parameter">
+                  <span class="settings-m__mark settings-m__mark-contrast"></span>
+                  <span class="settings-m__tuning-strip">
+                    <span class="settings-m__tuning-mark settings-m__tuning-mark-contrast"></span>
+                  </span>
+                </div>
+              </div>
+              <div class="upload__button-post">
+                <button class="upload__button-apply" type="button">
+                  Запостить
+                </button>
+                <button class="upload__button-cancellation" type="button">
+                  Отмена
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
