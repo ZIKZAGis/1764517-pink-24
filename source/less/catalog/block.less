@@ -1,5 +1,7 @@
 .block__image {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .block__comment {
@@ -9,17 +11,20 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
     min-height: 155px;
     margin: 0;
     padding: 30px;
   }
 }
 
-.block__username {
+.block__username,
+.block-of-the-day__username {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 14px 0;
+  margin: 0;
 }
 
 .block__comment-time {
@@ -29,10 +34,34 @@
   text-transform: uppercase;
 }
 
-.block__comment-text {
+.block__comment-text,
+.block-of-the-day__comment-text {
   line-height: 24px;
+  margin: 0 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
-.block__like-button {
+.block__label,
+.block-of-the-day__label {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.block__like-button,
+.block-of-the-day__like-button {
   margin-right: 18px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url("../../img/catalog/Icon/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
