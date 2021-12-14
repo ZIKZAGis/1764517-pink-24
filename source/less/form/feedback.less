@@ -1,5 +1,6 @@
 .feedback {
   border: none;
+  margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -21,6 +22,7 @@
   padding: 42px 22px 52px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     padding: 60px 47px 53px;
   }
 
@@ -31,6 +33,18 @@
 
 .feedback__legend {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    width: 260px;
+    box-sizing: border-box;
+    background-color: @white;
+    margin-left: -130px;
+    padding: 14px 31px;
+  }
 }
 
 .feedback__textarea {
@@ -41,9 +55,15 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  border: 2px solid @grey;
+  border-radius: 1px;
   padding: 22px 20px;
 
   @media (min-width: @desktop-width) {
     min-height: 124px;
   }
+}
+
+.feedback__textarea::placeholder {
+  color: @navyblue;
 }

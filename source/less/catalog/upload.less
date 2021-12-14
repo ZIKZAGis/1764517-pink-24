@@ -105,6 +105,16 @@
   border-color: @darkpink;
   margin-bottom: 12px;
 
+  &:hover {
+    color: @white;
+    background-color: @darkpink;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @darkpink;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0 40px 0 0;
   }
@@ -117,4 +127,18 @@
   color: @navyblue;
   border-color: @navyblue;
   opacity: 0.1;
+
+  &:hover {
+    opacity: 0.2;
+  }
+
+  &:active {
+    opacity: 0.2;
+    color: @white;
+    background-color: @navyblue;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 40px 0 0;
+  }
 }
