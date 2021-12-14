@@ -68,6 +68,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
+    margin: 0;
   }
 }
 
@@ -88,5 +89,17 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+}
+
+.application__required-field-s {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.application__required-field-l {
+  @media (max-width: calc(@desktop-width - 1px)) {
+    display: none;
   }
 }
