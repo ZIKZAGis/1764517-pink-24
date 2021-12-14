@@ -21,13 +21,21 @@
     margin: 0 auto;
     padding: 45px 85px 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 756px;
+  }
 }
 
-.application__title--hidding-s {
+.aplication__title--hidding-s {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
 
@@ -44,6 +52,7 @@
     grid-template-rows: 300px 160px 230px 215px 60px;
     grid-gap: 73px 65px;
     max-width: 940px;
+    padding: 0;
   }
 }
 
@@ -73,11 +82,11 @@
 }
 
 .application__required-field {
+  text-transform: uppercase;
   margin: 0;
   padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    text-transform: uppercase;
     padding: 0;
   }
 }

@@ -1,33 +1,37 @@
 .version {
   border: none;
+  margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     order: 1;
     border: 2px solid @grey;
     border-radius: 3px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    margin-bottom: 0;
+    height: 297px;
   }
 }
 
 .version__wrapper {
+  position: relative;
   background-color: @lightgrey;
   padding: 42px 20px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    max-width: 620px;
     background-color: transparent;
     padding: 54px 60px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 74px 0;
+    padding: 50px 74px;
   }
 }
 
@@ -35,6 +39,18 @@
   text-align: center;
   margin: 0 auto 40px;
   padding: 0 45px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    box-sizing: border-box;
+    width: 370px;
+    line-height: 30px;
+    background-color: @white;
+    margin-left: -185px;
+    padding: 4px 25px;
+  }
 }
 
 .version__list {
@@ -52,17 +68,38 @@
   align-items: center;
 }
 
+.version__control-label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .version__control-mark {
   display: inline-block;
+  position: relative;
   width: 37px;
   height: 37px;
   background-color: @white;
   border: 2px solid @grey;
   border-radius: 50%;
   margin-right: 31px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @navyblue;
+  }
+
+  &:active {
+    border-color: @darkpink;
+  }
 }
 
-.version__control-label {
-  font-size: 18px;
-  line-height: 30px;
+.version__control-input:checked + .version__control-mark::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  border-radius: 50%;
+  background-color: @darkpink;
 }

@@ -8,6 +8,24 @@
   background-color: @mediumgreen;
   border: none;
   border-radius: 3px;
-  padding: 20px 0;
+  padding: 15px 0;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 296px;
+  }
 }

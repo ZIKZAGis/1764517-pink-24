@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header-inner">
+    <header class="page-header page-header-inner page-header-inner-form">
       <div class="page-header__wrapper">
         <div class="page-header__navigation page-header__navigation--closed">
           <a class="page-header__logo" href="index.html">
@@ -221,13 +221,13 @@
               <li class="user-contacts__item">
                 <label class="user-contacts__control">
                   <span class="user-contacts__label dedicated-text">Номер телефона</span>
-                  <input class="user-contacts__input" type="text" name="phone-number" placeholder="Номер, пожалуйста">
+                  <input class="user-contacts__input user-contacts__input-phone" type="text" name="phone-number" placeholder="Номер, пожалуйста">
                 </label>
               </li>
               <li class="user-contacts__item">
                 <label class="user-contacts__control">
                   <span class="user-contacts__label dedicated-text">Адрес почты</span>
-                  <input class="user-contacts__input" type="text" name="email" placeholder="Введите почту *" required>
+                  <input class="user-contacts__input user-contacts__input-email" type="text" name="email" placeholder="Введите почту *" required>
                 </label>
               </li>
             </ul>
@@ -240,21 +240,21 @@
               <ul class="version__list">
                 <li class="version__item">
                   <label class="version__control">
-                    <input class="version__control-input visually-hidden" type="radio" name="IOS" checked>
+                    <input class="version__control-input visually-hidden" type="radio" name="platform" value="IOS" checked>
                     <span class="version__control-mark"></span>
                     <span class="version__control-label">Pink для iOS</span>
                   </label>
                 </li>
                 <li class="version__item">
                   <label class="version__control">
-                    <input class="version__control-input visually-hidden" type="radio" name="Android">
+                    <input class="version__control-input visually-hidden" type="radio" name="platform" value="Android">
                     <span class="version__control-mark"></span>
                     <span class="version__control-label">Pink на Android</span>
                   </label>
                 </li>
                 <li class="version__item">
                   <label class="version__control">
-                    <input class="version__control-input visually-hidden" type="radio" name="Windows Phone">
+                    <input class="version__control-input visually-hidden" type="radio" name="platform" value="Windows Phone">
                     <span class="version__control-mark"></span>
                     <span class="version__control-label">Windows Phone</span>
                   </label>
