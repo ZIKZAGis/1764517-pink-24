@@ -1,13 +1,13 @@
 .price__wrapper {
   text-align: center;
-  background-image: url("../../img/index/background/background-price-index-s.png");
+  background-image: url("../img/index/background/background-price-index-s.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 127px 20px 49px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/index/background/background-price-index-m.png");
+    background-image: url("../img/index/background/background-price-index-m.png");
     padding-bottom: 70px;
   }
 
@@ -30,15 +30,17 @@
 .price__table-current {
   @media (max-width: @mobile-width-only) {
     &--base {
-      transform: translateX(0);
+      transform: translateX(calc(-17% + 3px));
     }
 
     &--standard {
-      transform: translateX(-280px);
+      transform: translateX(-50%);
+      margin-left: 50%;
     }
 
     &--unlimited {
-      transform: translateX(-560px);
+      transform: translateX(calc(-83% - 3px));
+      margin-left: 50%;
     }
   }
 }
@@ -50,10 +52,15 @@
   color: @white;
   border-right: 2px solid @lightgrey;
   text-align: center;
+  padding: 10px 0;
 
   @media (min-width: @tablet-width) {
     min-width: 153px;
-    padding: 12px 1px 0;
+    padding: 15px 0 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 0 20px;
   }
 }
 
@@ -83,20 +90,25 @@
   padding: 20px;
 
   &--yes {
-    background-image: url("../../img/index/icon/price-yes.svg");
+    background-image: url("../img/index/icon/price-yes.svg");
   }
 
   &--no {
-    background-image: url("../../img/index/icon/price-no.svg");
+    background-image: url("../img/index/icon/price-no.svg");
   }
 
   @media (min-width: @tablet-width) {
     display: table-cell;
-    height: 59px;
+    height: 45px;
+    min-width: 153px;
     box-sizing: border-box;
     background-position: center;
     text-transform: none;
-    padding: 8px 15px;
+    padding: 6px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
   }
 }
 
@@ -106,7 +118,7 @@
   @media (min-width: @tablet-width) {
     display: table-cell;
     box-sizing: border-box;
-    min-width: 153px;
+    padding: 6px 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -145,6 +157,10 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
