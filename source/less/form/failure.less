@@ -9,9 +9,27 @@
     width: 100%;
     background-color: @white;
     text-align: center;
-    bottom: -1150px;
+    bottom: -980px;
     padding: 44px 0 52px 0;
     box-shadow: 0 4px 4px fade(@black, 25%);
+
+    @media (min-width: @tablet-width) {
+      box-sizing: border-box;
+      width: 460px;
+      left: 50%;
+      bottom: -700px;
+      margin-left: -230px;
+      padding: 44px 80px 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      box-sizing: border-box;
+      width: 780px;
+      left: 50%;
+      bottom: -585px;
+      margin-left: -390px;
+      padding: 44px 0 0;
+    }
   }
 }
 
@@ -19,10 +37,31 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 37px 0;
+  margin: 0 0 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 20px 30px;
+  }
 }
 
 .failure__description {
   line-height: 24px;
-  margin: 0 0 93px 0;
+  margin: 0 0 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 200px 65px;
+  }
+}
+
+.failure__button-wrapper {
+  @media (min-width: @desktop-width) {
+    background-color: @lightgrey;
+    padding: 52px 0;
+  }
 }

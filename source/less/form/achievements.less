@@ -26,10 +26,6 @@
     background-color: transparent;
     padding: 54px 60px 50px;
   }
-
-  @media (min-width: @desktop-width) {
-    height: 117px;
-  }
 }
 
 .achievements__legend {
@@ -57,13 +53,20 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 43px;
+    row-gap: 47px;
+    grid-auto-flow: column;
   }
 }
 
 .achievements__item:not(:last-child) {
   margin-bottom: 47px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .achievements__control {
