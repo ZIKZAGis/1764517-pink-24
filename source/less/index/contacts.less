@@ -105,19 +105,31 @@
   min-height: 200px;
   background-image:
     url("../img/index/background/background-map-triangle.png"),
-    url("../img/index/background/background-map-s.jpg");
+    url("../img/index/map-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top, center;
   background-size: 100%, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/index/background/background-map-triangle.png"),
+      url("../img/index/map-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 374px;
     background-image:
       url("../img/index/background/background-map-triangle.png"),
-      url("../img/index/background/background-map-m.jpg");
+      url("../img/index/map-tablet.jpg");
     background-repeat: no-repeat;
     background-position: top, center;
     background-size: 100%, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/index/background/background-map-triangle.png"),
+        url("../img/index/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -125,11 +137,17 @@
     min-height: 500px;
     background-image:
       url("../img/index/background/background-map-triangle.png"),
-      url("../img/index/background/background-map-l.jpg");
+      url("../img/index/map-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top, center;
     background-size: 100%, cover;
     margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/index/background/background-map-triangle.png"),
+        url("../img/index/map-desktop@2x.jpg");
+    }
   }
 }
 
