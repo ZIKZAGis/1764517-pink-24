@@ -1,5 +1,7 @@
 .block-of-the-day {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .block-of-the-day__mark {
@@ -9,6 +11,8 @@
   font-size: 12px;
   line-height: 24px;
   color: @white;
+  top: 0;
+  right: 20px;
   text-transform: uppercase;
   background-color: @darkpink;
   padding: 6px 1px;
@@ -16,6 +20,11 @@
   @media (min-width: @tablet-width) {
     top: 57px;
     right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
   }
 }
 
@@ -30,7 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 

@@ -38,7 +38,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 190px 190px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 20px;
     max-width: 620px;
     margin: 0 auto;
     padding: 55px 20px;
@@ -52,10 +53,14 @@
 }
 
 .upload__user-photo {
-  width: 280px;
-  margin-bottom: 42px;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 42px;
 
   @media (min-width: @tablet-width) {
+    max-width: 300px;
+    height: auto;
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     margin: 0;
@@ -71,6 +76,8 @@
 
   @media (min-width: @tablet-width) {
     margin-top: auto;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
   }
 
   @media (min-width: @desktop-width) {
