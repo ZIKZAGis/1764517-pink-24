@@ -38,10 +38,28 @@
 
 .page-footer__logo-glasses {
   margin-right: 12px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-name {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .page-footer__logo-name path {
   fill: @navyblue;
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .page-footer__list {

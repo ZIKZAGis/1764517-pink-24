@@ -141,11 +141,29 @@
   @media (min-width: @tablet-width) {
     display: inline-block;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__logo-glasses path {
   @media (min-width: @tablet-width) {
     fill: @white;
+  }
+}
+
+.page-header__logo-name {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
