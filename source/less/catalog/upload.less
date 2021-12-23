@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 200px 200px;
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
     max-width: 620px;
     margin: 0 auto;
     padding: 55px 20px;
@@ -47,8 +47,9 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 300px 410px;
+    grid-column-gap: 90px;
     max-width: 940px;
-    padding: 55px 80px;
+    padding: 57px 60px 57px 80px;
   }
 }
 
@@ -82,6 +83,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    margin: auto 0 0;
   }
 }
 

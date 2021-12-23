@@ -389,37 +389,51 @@
                 <img class="upload__user-photo" src="img/catalog/users-photos/user-photo-mobile.jpg" srcset="img/catalog/users-photos/user-photo-mobile@2x.jpg 2x" width="280" height="374" alt="Ваше фото">
               </picture>
               <div class="upload__settings settings">
-                <label class="settings__button-label">
-                  <span class="settings__button-mark settings__button-mark-crop"></span>
-                  <input class="visually-hidden" type="radio" name="crop">
-                </label>
-                <label class="settings__button-label">
-                  <span class="settings__button-mark settings__button-mark-fill"></span>
-                  <input class="visually-hidden" type="radio" name="fill">
-                </label>
-                <label class="settings__button-label">
-                  <span class="settings__button-mark settings__button-mark-contrast"></span>
-                  <input class="visually-hidden" type="radio" name="contrast">
-                </label>
+                <div class="settings__button-wrapper">
+                  <label class="settings__button-label settings__button-label--current">
+                    <svg class="settings__button-mark" width="44" height="44">
+                      <use xlink:href="img/sprite.svg#crop"></use>
+                    </svg>
+                    <input class="visually-hidden" type="radio" name="crop">
+                  </label>
+                  <label class="settings__button-label">
+                    <svg class="settings__button-mark" width="48" height="43">
+                      <use xlink:href="img/sprite.svg#fill"></use>
+                    </svg>
+                    <input class="visually-hidden" type="radio" name="fill">
+                  </label>
+                  <label class="settings__button-label">
+                    <svg class="settings__button-mark" width="32" height="32">
+                      <use xlink:href="img/sprite.svg#contrast"></use>
+                    </svg>
+                    <input class="visually-hidden" type="radio" name="contrast">
+                  </label>
+                </div>
                 <span class="settings__tuning-strip">
                   <span class="settings__tuning-mark"></span>
                 </span>
               </div>
               <div class="upload__settings settings-m">
                 <div class="settings-m__parameter">
-                  <span class="settings-m__mark settings-m__mark-crop"></span>
+                  <svg class="settings-m__mark settings-m__mark-crop" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#crop"></use>
+                  </svg>
                   <span class="settings-m__tuning-strip">
                     <span class="settings-m__tuning-mark settings-m__tuning-mark-crop"></span>
                   </span>
                 </div>
                 <div class="settings-m__parameter">
-                  <span class="settings-m__mark settings-m__mark-fill"></span>
+                  <svg class="settings-m__mark settings-m__mark-fill" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#fill"></use>
+                  </svg>
                   <span class="settings-m__tuning-strip">
                     <span class="settings-m__tuning-mark settings-m__tuning-mark-fill"></span>
                   </span>
                 </div>
                 <div class="settings-m__parameter">
-                  <span class="settings-m__mark settings-m__mark-contrast"></span>
+                  <svg class="settings-m__mark settings-m__mark-contrast" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#contrast"></use>
+                  </svg>
                   <span class="settings-m__tuning-strip">
                     <span class="settings-m__tuning-mark settings-m__tuning-mark-contrast"></span>
                   </span>
