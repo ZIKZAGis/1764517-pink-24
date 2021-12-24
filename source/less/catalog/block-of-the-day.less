@@ -50,15 +50,19 @@
 .block-of-the-day__comment {
   text-align: left;
   background-color: @lightgrey;
-  padding: 25px 17px;
+  padding: 18px 12px 22px 17px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     position: relative;
     box-sizing: border-box;
     max-width: 940px;
-    padding: 30px;
-    margin: 0 auto 50px;
+    padding: 22px 25px 25px 30px;
+    margin: 0 auto 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -83,12 +87,13 @@
 .block-of-the-day__label {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    flex-direction: row-reverse;
+    top: 28px;
+    right: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 33px;
+    top: 28px;
   }
 }
 
@@ -101,6 +106,12 @@
 }
 
 .block-of-the-day__like-button-description {
+  font-size: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-right: 16px;
   }

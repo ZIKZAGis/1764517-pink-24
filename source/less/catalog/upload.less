@@ -17,18 +17,19 @@
 
 .upload__title {
   margin: 0;
-  padding: 29px 20px 52px;
+  padding: 19px 20px 42px;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 30px;
     max-width: 430px;
     margin: 0 auto;
-    padding: 70px 115px 80px;
+    padding: 65px 115px 69px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 65px 120px 75px;
+    padding: 60px 120px 66px;
   }
 }
 
@@ -42,14 +43,14 @@
     grid-column-gap: 50px;
     max-width: 620px;
     margin: 0 auto;
-    padding: 55px 20px;
+    padding: 57px 20px 54px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 300px 410px;
     grid-column-gap: 90px;
     max-width: 940px;
-    padding: 57px 60px 57px 80px;
+    padding: 57px 60px 64px 80px;
   }
 }
 
@@ -57,7 +58,7 @@
   display: block;
   width: 100%;
   max-width: 280px;
-  margin: 0 auto 42px;
+  margin: 0 auto 39px;
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
@@ -72,13 +73,14 @@
   display: flex;
   flex-direction: column;
   max-width: 280px;
-  padding: 38px 0 0;
+  padding: 75px 0 0;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-top: auto;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    margin: auto 0 0;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -124,8 +126,12 @@
     background-color: @darkpink;
   }
 
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px 0;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 0 40px 0 0;
+    margin: 0 48px 0 0;
   }
 }
 
