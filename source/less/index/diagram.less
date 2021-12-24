@@ -3,11 +3,11 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 100px 20px 85px;
+    padding: 96px 20px 84px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 110px 130px 115px;
+    padding: 100px 130px 112px;
     background-color: @lightgrey;
   }
 }
@@ -19,13 +19,13 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding-left: 290px;
+    padding-left: 310px;
   }
 
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
-    max-width: 900px;
-    padding-left: 320px;
+    max-width: 940px;
+    padding-left: 370px;
   }
 }
 
@@ -34,8 +34,8 @@
   position: absolute;
   width: 240px;
   height: 280px;
-  top: -30px;
-  left: -10px;
+  top: -42px;
+  left: 0;
   background-image: url("../img/index/diagram-tablet.png");
   background-repeat: no-repeat;
 
@@ -47,8 +47,8 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 350px;
-    top: -85px;
-    left: -20px;
+    top: -92px;
+    left: 1px;
     background-image: url("../img/index/diagram-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -64,21 +64,24 @@
   font-size: 30px;
   line-height: 36px;
   color: @black;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 
   @media (min-width: @desktop-width) {
     max-width: none;
+    margin-bottom: 22px;
   }
 }
 
 .diagram__description {
   line-height: 24px;
-  margin: 0 0 20px 0;
+  max-width: 300px;
+  margin: 0 0 12px 0;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     max-width: 600px;
+    margin-bottom: 30px;
   }
 }
 

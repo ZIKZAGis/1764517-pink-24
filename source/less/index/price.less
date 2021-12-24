@@ -4,15 +4,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding: 127px 20px 49px;
+  padding: 130px 20px 49px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/index/background/background-price-index-m.png");
-    padding-bottom: 70px;
+    padding: 114px 20px 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 160px 130px 100px;
+    padding: 164px 130px 68px;
   }
 }
 
@@ -48,20 +48,21 @@
 .price__table-head {
   position: relative;
   box-sizing: border-box;
-  min-width: 280px;
+  min-width: 278px;
   background-color: @navyblue;
   color: @white;
   border-right: 2px solid @lightgrey;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0 14px;
 
   @media (min-width: @tablet-width) {
     min-width: 153px;
-    padding: 15px 0 10px;
+    padding: 13px 0 12px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 15px 0 20px;
+    padding: 16px 0 24px;
+    width: 235px;
   }
 }
 
@@ -107,20 +108,21 @@
   line-height: 30px;
   background-color: @white;
   background-repeat: no-repeat;
-  background-position: 230px 21px;
   border: 2px solid @grey;
   border-top: none;
   text-transform: uppercase;
   text-align: left;
   margin: 0;
-  padding: 20px;
+  padding: 14px 20px 15px;
 
   &--yes {
     background-image: url("../img/index/icon/price-yes.svg");
+    background-position: 228px 19px;
   }
 
   &--no {
     background-image: url("../img/index/icon/price-no.svg");
+    background-position: 230px 16px;
   }
 
   @media (min-width: @tablet-width) {
@@ -144,12 +146,14 @@
   @media (min-width: @tablet-width) {
     display: table-cell;
     box-sizing: border-box;
-    padding: 6px 15px;
+    padding: 7px 15px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 235px;
+    padding: 14px 21px;
   }
 }
 
@@ -174,13 +178,14 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-bottom: 3px;
   }
 }
 
 .price__value {
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   text-transform: uppercase;
   margin: 0 0 17px 0;
 
