@@ -65,6 +65,16 @@
   }
 }
 
+.achievements__item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .achievements__control {
   display: flex;
   align-items: center;
