@@ -66,8 +66,15 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/index/background/background-info-index-l.png");
-    padding: 370px 130px 60px;
+    padding: 0 120px 27px;
     margin-top: 44px;
+  }
+}
+
+.info__list-container {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -84,10 +91,19 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    max-width: 940px;
+    flex-wrap: wrap;
+    max-width: 960px;
     text-align: center;
-    margin: 0 auto;
+    margin-right: -10px;
     padding: 0;
+  }
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -103,7 +119,8 @@
 
   @media (min-width: @desktop-width) {
     width: 300px;
-    margin: 0;
+    margin: 0 20px 20px 0;
+    padding-top: 370px;
   }
 }
 
@@ -113,7 +130,7 @@
     position: absolute;
     width: 300px;
     height: 301px;
-    top: -357px;
+    top: 13px;
     left: -4px;
     background-image: url("../img/index/info-mood-desktop.png");
     background-repeat: no-repeat;
@@ -132,7 +149,7 @@
     position: absolute;
     width: 300px;
     height: 301px;
-    top: -357px;
+    top: 13px;
     left: -4px;
     background-image: url("../img/index/info-photo-desktop.png");
     background-repeat: no-repeat;
@@ -178,7 +195,7 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 301px;
-    top: -357px;
+    top: 13px;
     left: -4px;
     background-image: url("../img/index/info-friends-desktop.png");
     background-size: 308px auto;
@@ -187,20 +204,6 @@
       background-image: url("../img/index/info-friends-desktop@2x.png");
       background-size: 308px auto;
     }
-  }
-}
-
-.info__item:not(:last-child) {
-  margin-bottom: 31px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 33px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 20px;
-    margin-left: 0;
-    margin-bottom: 0;
   }
 }
 
