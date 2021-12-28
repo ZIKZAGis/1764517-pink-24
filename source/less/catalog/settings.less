@@ -22,13 +22,14 @@
   height: 50px;
   margin-bottom: 35px;
 
-  &--current svg {
-    fill: @darkpink;
+  & path {
+    opacity: 0.3;
   }
-}
 
-.settings__button-mark {
-  opacity: 0.3;
+  &--current path {
+    fill: @darkpink;
+    opacity: 1;
+  }
 }
 
 .settings__tuning-strip {

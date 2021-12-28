@@ -110,11 +110,10 @@
 .reviews__arrows {
   display: none;
   position: absolute;
-  top: 29px;
-  left: 20px;
-  width: 940px;
-  height: 40px;
-  margin: 0 auto;
+  top: 16px;
+  left: -4px;
+  width: 988px;
+  height: 70px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -123,14 +122,21 @@
 }
 
 .reviews__arrow {
-  width: 22px;
-  height: 41px;
+  width: 70px;
+  height: 70px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/index/icon/arrow.svg");
   cursor: pointer;
-}
 
-.reviews__arrow-next {
-  transform: scale(-1, 1);
+  &-next {
+    transform: scale(-1, 1);
+  }
+
+  &:hover path {
+    opacity: 1;
+  }
+
+  &:active path {
+    opacity: 0.1;
+  }
 }
