@@ -9,7 +9,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -75,22 +74,13 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
-}
-
 // Copy
 
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -109,7 +99,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -160,7 +150,6 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
   gulp.series(
