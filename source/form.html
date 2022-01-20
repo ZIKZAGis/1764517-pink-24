@@ -12,7 +12,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__navigation-container">
-        <div class="page-header__navigation page-header__navigation-inner page-header__navigation--opened page-header__navigation--nojs">
+        <div class="page-header__navigation page-header__navigation-inner page-header__navigation--closed page-header__navigation--nojs">
           <a class="page-header__logo" href="index.html">
             <svg class="page-header__logo-glasses" width="59" height="40" focusable="false" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="очки">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491
@@ -279,10 +279,10 @@
           </fieldset>
           <fieldset class="application__feedback feedback">
             <div class="feedback__wrapper">
-              <div class="feedback__legend dedicated-text">
+              <label for="text-field" class="feedback__legend dedicated-text">
                 Опишите свои эмоции
-              </div>
-              <textarea class="feedback__textarea" name="feedback" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+              <textarea class="feedback__textarea" name="feedback" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях" id="text-field"></textarea>
             </div>
           </fieldset>
           <div class="application__bottom-wrapper">

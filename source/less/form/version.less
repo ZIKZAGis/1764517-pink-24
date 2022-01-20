@@ -70,6 +70,15 @@
 .version__control-label {
   font-size: 18px;
   line-height: 30px;
+  max-width: 210px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 430px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 225px;
+  }
 }
 
 .version__control-mark {
