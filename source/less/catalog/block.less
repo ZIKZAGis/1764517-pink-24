@@ -1,5 +1,10 @@
 .block {
   width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 300px;
@@ -15,8 +20,7 @@
 .block__comment {
   text-align: left;
   background-color: @lightgrey;
-  padding: 18px 17px 20px;
-  margin-bottom: 21px;
+  padding: 18px 17px 22px;
 
   @media (min-width: @tablet-width) {
     display: flex;
