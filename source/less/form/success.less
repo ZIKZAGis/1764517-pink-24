@@ -1,30 +1,29 @@
 .success {
-  &--closed {
-    display: none;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background-color: @white;
+  text-align: center;
+  padding-top: 40px;
+  box-shadow: 0 4px 4px fade(@black, 25%);
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
   }
 
-  &--opened {
-    display: block;
-    position: absolute;
-    background-color: @white;
-    text-align: center;
-    bottom: -1386px;
-    padding-top: 40px;
-    box-shadow: 0 4px 4px fade(@black, 25%);
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    left: 50%;
+    margin-left: -390px;
+  }
 
-    @media (min-width: @tablet-width) {
-      width: 460px;
-      bottom: -1181px;
-      left: 50%;
-      margin-left: -230px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 780px;
-      bottom: -924px;
-      left: 50%;
-      margin-left: -390px;
-    }
+  &--closed {
+    display: none;
   }
 }
 
@@ -33,7 +32,7 @@
   font-size: 18px;
   line-height: 24px;
   color: @black;
-  margin: 0 0 25px 0;
+  margin: 0 20px 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -57,8 +56,12 @@
 }
 
 .success__button-wrapper {
-  padding: 52px 0;
+  padding: 52px 20px;
   background-color: @lightgrey;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 82px;
+  }
 }
 
 .success__button {

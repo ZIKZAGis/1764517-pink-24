@@ -1,35 +1,31 @@
 .failure {
-  &--closed {
-    display: none;
+  display: block;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background-color: @white;
+  text-align: center;
+  padding: 38px 20px 52px;
+  box-shadow: 0 4px 4px fade(@black, 25%);
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    padding: 44px 80px 52px;
   }
 
-  &--opened {
-    display: block;
-    position: absolute;
-    width: 100%;
-    background-color: @white;
-    text-align: center;
-    bottom: -821px;
-    padding: 38px 0 52px;
-    box-shadow: 0 4px 4px fade(@black, 25%);
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    margin-left: -390px;
+    padding: 44px 0 0;
+  }
 
-    @media (min-width: @tablet-width) {
-      box-sizing: border-box;
-      width: 460px;
-      left: 50%;
-      bottom: -637px;
-      margin-left: -230px;
-      padding: 44px 80px 52px;
-    }
-
-    @media (min-width: @desktop-width) {
-      box-sizing: border-box;
-      width: 780px;
-      left: 50%;
-      bottom: -466px;
-      margin-left: -390px;
-      padding: 44px 0 0;
-    }
+  &--closed {
+    display: none;
   }
 }
 
@@ -37,7 +33,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 26px;
+  margin: 0 0 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
